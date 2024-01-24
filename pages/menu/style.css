@@ -1,0 +1,175 @@
+/*
+  Menu Section
+*/
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-heading_menu {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Tabs */
+
+.menu__tabs-container {
+  margin-top: 40px;
+  display: flex;
+}
+
+.menu__tab {
+  padding: 7px 15px 7px 7px;
+  display: flex;
+  border: 1px solid var(--lightBorderColor);
+  border-radius: 100px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.menu__tab:not(:last-child) {
+  margin-right: 16px;
+}
+
+.menu__tab_active {
+  color: var(--lightTextColor);
+  background-color: var(--containerBGColor);
+}
+
+.menu__tab:hover {
+  color: var(--lightTextColor);
+  background-color: var(--containerBGColor);
+  cursor: pointer;
+}
+
+.menu__icon-container {
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightBorderColor);
+  border-radius: 100px;
+}
+
+.menu__tabs-text {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+/* Menu list */
+
+.menu__list {
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 4px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.menu__item {
+  height: 506px;
+  flex-basis: 310px;
+  border: 1px solid var(--darkBorderColor);
+  border-radius: 40px;
+}
+
+/* Item Image */
+
+.menu__image {
+  border-radius: 40px;
+  height: 310px;
+}
+
+.menu__image1 {
+  background: url("../../assets/images/menu/coffee-1.jpg");
+}
+
+.menu__image2 {
+  background: url("../../assets/images/menu/coffee-2.jpg");
+}
+
+.menu__image3 {
+  background: url("../../assets/images/menu/coffee-3.jpg");
+}
+
+.menu__image4 {
+  background: url("../../assets/images/menu/coffee-4.jpg");
+}
+
+.menu__image5 {
+  background: url("../../assets/images/menu/coffee-5.jpg");
+}
+
+.menu__image6 {
+  background: url("../../assets/images/menu/coffee-6.jpg");
+}
+
+.menu__image7 {
+  background: url("../../assets/images/menu/coffee-7.jpg");
+}
+
+.menu__image8 {
+  background: url("../../assets/images/menu/coffee-8.jpg");
+}
+
+.menu__image1,
+.menu__image2,
+.menu__image3,
+.menu__image4,
+.menu__image5,
+.menu__image6,
+.menu__image7,
+.menu__image8 {
+  background-size: calc(100% * 1.1);
+  background-position: 50% 50%;
+  transition: background-size 0.3s;
+}
+
+.menu__item:hover .menu__image1,
+.menu__item:hover .menu__image2,
+.menu__item:hover .menu__image3,
+.menu__item:hover .menu__image4,
+.menu__item:hover .menu__image5,
+.menu__item:hover .menu__image6,
+.menu__item:hover .menu__image7,
+.menu__item:hover .menu__image8 {
+  background-size: 100%;
+}
+
+/* Item Descripion */
+
+.menu__item-desc-container {
+  padding: 20px;
+  height: calc(100% - 310px);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__item-heading {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+}
+
+.menu__item-desctiption {
+  margin-top: 12px;
+  margin-bottom: auto;
+  line-height: 150%;
+}
+
+.menu__item-cost {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 24px;
+}
